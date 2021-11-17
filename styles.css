@@ -29,11 +29,20 @@ a:hover {
     margin: auto;
 }
 
+.footer {
+    margin: auto;
+    text-align: center;
+}
+
+.footer p {
+    font-size: small;
+    align-self: center;
+}
+
 .gallery {
-    max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: 10px;
 }
 
 .grid_cell {
