@@ -16,24 +16,24 @@ figure {
 
 @media (min-width: 600px) {
     .gallery { 
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 275px); 
     }
   }
 
 @media (min-width: 900px) {
     .gallery { 
-        grid-template-columns: repeat(3, 1fr); 
+        grid-template-columns: repeat(3, 275px); 
     }
   }
 
 @media (min-width: 1200px) {
     .gallery { 
-        grid-template-columns: repeat(4, 1fr); 
+        grid-template-columns: repeat(4, 275px); 
     }
   }
 
 .gallery_thumb {
-    width: 200px;
+    width: 250px;
     object-fit: cover;
 }
 
