@@ -1,0 +1,26 @@
+---
+---
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="{{ site.baseurl }}/">Gallery</a>
+            <a href="{{ site.baseurl }}/creators">Creators</a>
+            <a href="{{ site.baseurl }}/about">About</a>
+        </nav>
+    </div>
+    <div class="container">
+
+        {% assign licence = site.data.licences | find: "licence", page.licence %}
+        {% assign creator = site.data.creators | find: "name", page.creator %}
+
+        <img src = "{{ page.image-url }}" width = 500>
+        <p>{{ page.title }} by <a href = "{{ creator.homepage }}">{{ page.creator }}</a></p>
+        <p>{{ page.date | date: "%d %B %Y"}}</p>
+        <p><a href="{{ licence.url }}">{{ page.licence }}</a></p>
+    </div>
+</body>
