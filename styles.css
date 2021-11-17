@@ -2,3 +2,14 @@
 body {
     background-color: linen
 }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 5px;);
+}
+
+.gallery_thumb {
+    width: 256;
+    object-fit: cover;
+}
