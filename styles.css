@@ -10,7 +10,7 @@ body {
     grid-gap: 1rem;
 }
 
-figure {
+.grid_cell {
     align-self: baseline;
 }
 
