@@ -3,7 +3,7 @@ title: Gallery index
 layout: index
 ---
 
-<div class="gallery">
+<div id = "gallery">
   {% assign sorted_exhibits = site.exhibits | sort: "date" %}
   {% for exhibit in sorted_exhibits %}
     {% assign licence_url = site.data.licences | find: "licence", exhibit.licence %}

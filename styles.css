@@ -28,22 +28,22 @@ a:hover {
     color: white;
 }
 
-.wrapper {
+#wrapper {
     max-width: 1200px;
     margin: auto;
 }
 
-.footer {
+#footer {
     margin: auto;
     text-align: center;
 }
 
-.footer p {
+#footer p {
     font-size: small;
     align-self: center;
 }
 
-.gallery {
+#gallery {
     margin: 0 auto;
     display: grid;
     grid-gap: 10px;
@@ -60,13 +60,13 @@ a:hover {
   }
 
 @media (min-width: 900px) {
-    .gallery { 
+    #gallery { 
         grid-template-columns: repeat(3, 275px); 
     }
   }
 
 @media (min-width: 1200px) {
-    .gallery { 
+    #gallery { 
         grid-template-columns: repeat(4, 275px); 
     }
   }
@@ -76,24 +76,24 @@ a:hover {
     object-fit: cover;
 }
 
-.exhibit {
+#exhibit {
     width: 300px;
 }
 
 @media (min-width: 600px) {
-    .exhibit {
+    #exhibit {
         width: 550px;
     }
 }
 
 @media (min-width: 900px) {
-    .exhibit {
+    #exhibit {
         width: 850px;
     }
 }
 
 @media (min-width: 1200px) {
-    .exhibit {
+    #exhibit {
         width: 1150px;
     }
 }
