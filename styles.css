@@ -4,12 +4,31 @@ body {
 }
 
 .gallery {
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 300px);
-    grid-gap: 5px;);
+    grid-gap: 1rem;
 }
 
+@media (min-width: 600px) {
+    .gallery { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+
+@media (min-width: 900px) {
+    .gallery { 
+        grid-template-columns: repeat(3, 1fr); 
+    }
+  }
+
+@media (min-width: 1200px) {
+    .gallery { 
+        grid-template-columns: repeat(4, 1fr); 
+    }
+  }
+
 .gallery_thumb {
-    width: 256;
+    width: 200;
     object-fit: cover;
 }
