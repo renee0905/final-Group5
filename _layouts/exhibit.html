@@ -7,23 +7,22 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="wrapper">
         <nav>
             <a href="{{ site.baseurl }}/">Gallery</a>
             <a href="{{ site.baseurl }}/creators">Creators</a>
             <a href="{{ site.baseurl }}/about">About</a>
         </nav>
-    </div>
-    <div class="container">
-        {% assign licence = site.data.licences | find: "licence", page.licence %}
-        {% assign creator = site.data.creators | find: "name", page.creator %}
-
-        <img src = "{{ page.image-url }}" class = "exhibit">
-        <p>{{ page.title }} by <a href = "{{ creator.homepage }}">{{ page.creator }}</a></p>
-        <p>{{ page.date | date: "%d %B %Y"}}</p>
-        <p><a href="{{ licence.url }}">{{ page.licence }}</a></p>
-    </div>
-    <div class="footer">
-        <p>Created with <a href = "https://jekyllrb.com/">Jekyll</a> for teaching purposes by <a href = "https://github.com/daniel-allington">Daniel Allington</a> in 2021</p>
+        <div class = "content"></div>
+            {% assign licence = site.data.licences | find: "licence", page.licence %}
+            {% assign creator = site.data.creators | find: "name", page.creator %}
+            <img src = "{{ page.image-url }}" class = "exhibit">
+            <p>{{ page.title }} by <a href = "{{ creator.homepage }}">{{ page.creator }}</a></p>
+            <p>{{ page.date | date: "%d %B %Y"}}</p>
+            <p><a href="{{ licence.url }}">{{ page.licence }}</a></p>
+        </div>
+        <div class="footer">
+            <p>Created with <a href = "https://jekyllrb.com/">Jekyll</a> for teaching purposes by <a href = "https://github.com/daniel-allington">Daniel Allington</a> in 2021</p>
+        </div>
     </div>
 </body>
