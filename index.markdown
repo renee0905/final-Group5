@@ -4,7 +4,8 @@ layout: index
 ---
 
 <div class="gallery">
-  {% for exhibit in site.exhibits %}
+  {% assign sorted_exhibits = site.exhibits | sort: "date" %}
+  {% for exhibit in sorted_exhibits %}
     {% assign licence_url = site.data.licences | find: "licence", exhibit.licence %}
     {% assign creator = site.data.creators | find: "name", exhibit.creator %}
     <div class = "grid_cell">
