@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <a href="{{ site.baseurl }}/">Gallery</a>
-            <a href="{{ site.baseurl }}/creators">Creators</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-        </nav>
-    </div>
-    <div class="container">
-        {{ content }}
+    <div class = "wrapper">
+        <div class = "header">
+            <nav>
+                <a href="{{ site.baseurl }}/">Gallery</a>
+                <a href="{{ site.baseurl }}/creators">Creators</a>
+                <a href="{{ site.baseurl }}/about">About</a>
+            </nav>
+        </div>
+        <div class = "content">
+            {{ content }}
+        </div>
     </div>
 </body>
