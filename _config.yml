@@ -26,7 +26,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # If you are running this site on your own computer, replace the above line with the following:
-# url: ""
+# url: "simple-gallery-3"
 # In order to deploy a version of this site online, you will first need to insert your intended URL
 
 # Build settings
