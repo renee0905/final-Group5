@@ -54,7 +54,7 @@ a:hover {
 }
 
 @media (min-width: 600px) {
-    .gallery { 
+    #gallery { 
         grid-template-columns: repeat(2, 275px); 
     }
   }
