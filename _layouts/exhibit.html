@@ -8,13 +8,15 @@
 </head>
 <body>
     <div id="wrapper">
-        <nav>
-            <a href="{{ site.baseurl }}/">Gallery</a>
-            <a href="{{ site.baseurl }}/creators">Creators</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-            <a href="{{ site.baseurl }}/search">Search</a>
-        </nav>
-        <div id = "content"></div>
+        <div id="header">
+            <nav>
+                <a href="{{ site.baseurl }}/">Gallery</a>
+                <a href="{{ site.baseurl }}/creators">Creators</a>
+                <a href="{{ site.baseurl }}/about">About</a>
+                <a href="{{ site.baseurl }}/search">Search</a>
+            </nav>
+        </div>
+        <div id = "content">
             {% assign licence = site.data.licences | find: "licence", page.licence %}
             {% assign creator = site.data.creators | find: "name", page.creator %}
             <img src = "{{ page.image-url }}" id = "exhibit">
